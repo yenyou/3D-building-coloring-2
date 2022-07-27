@@ -14,11 +14,16 @@
 </head>
 
 <body>
+    <div id="performanceInfo">
+        <h4 id="title"></h4>
+        <table id="memory"></table>
+        <table id="count"></table>
+    </div>
     <div id="viewDiv"></div>
     <div id="widget">
         <div class="container">
-            <color-tag :low="lowData" :medium="mediumData" :high="highData"></color-tag>
             <button v-on:click="query">go</button>
+            <button v-on:click="addLayer">add layer</button>
             <br>
         </div>
     </div>
