@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://js.arcgis.com/4.20/esri/themes/light/main.css">
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script src="https://js.arcgis.com/4.23/"></script>
+    <script src="https://js.arcgis.com/4.20/"></script>
     <script type="module" src="./app.js"></script>
 </head>
 
@@ -22,8 +22,10 @@
     <div id="viewDiv"></div>
     <div id="widget">
         <div class="container">
-            <button v-on:click="query">go</button>
-            <button v-on:click="addLayer">add layer</button>
+            <div>畫質:{{quality}}</div>
+            <button v-on:click="toggle">切換</button>
+            <br>
+            <button v-on:click="refresh">重新載入</button>
             <br>
         </div>
     </div>

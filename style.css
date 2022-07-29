@@ -17,8 +17,8 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  min-height: 100px;
-  width: 100px;
+  min-height: 50px;
+  width: 150px;
   background-color: white;
   border: 1 solid black;
 }
